@@ -1,7 +1,6 @@
 # Web-Final-Project-
-Web Final Project 
-<b> MY FINAL WEB PROJECT</b>
-<b><i>Website about Gyms and Fitness</i></b>
+<b> MY FINAL WEB PROJECT</b> <br>
+<b><i>Website about Gyms and Fitness</i></b> <br>
 Five pages: <br>
 Main page - with some little stuff <br>
 Search page - searching items, gyms, equipments from Json-database <br>
