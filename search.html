@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Study"/>
+	<meta charset = "utf-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <link rel="stylesheet" href="style.css">    
+    <script src="index.js"></script>
+    <title>search</title>
+</head>
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm ">
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item" lang="en"><a href="main.html" class="nav-link font-weight-bold text-uppercase">Main</a></li>
+            <li class="nav-item" lang="ru"><a href="main.html" class="nav-link font-weight-bold text-uppercase">ГЛАВНАЯ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <li class="nav-item" lang="en"><a href="my account.html" class="nav-link font-weight-bold text-uppercase">MY ACCOUNT</a></li>
+            <li class="nav-item" lang="ru"><a href="my account.html" class="nav-link font-weight-bold text-uppercase">МОЙ АККАУНТ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <li class="nav-item" lang="en"><a href="search.html" class="nav-link font-weight-bold text-uppercase">Search</a></li>
+            <li class="nav-item" lang="ru"><a href="search.html" class="nav-link font-weight-bold text-uppercase">ИСКАТЬ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <div class="dropdown">
+            <div onclick="myFunction()" class="dropbtn" lang="en">DROP DOWN</div>
+            <div onclick="myFunction()" class="dropbtn" lang="ru">ДРОП ДАУН</div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="form.html" lang="en">FORM</a>
+                <a href="about.html" lang="en">ABOUT</a>
+                <a href="form.html" lang="ru">ВОЙТИ</a>
+                <a href="about.html" lang="ru">О НАС</a>
+            </div>
+          </div>
+          </ul>
+          <div class = "lang">
+            <form> 
+              <label for="lang-switch">
+                <span lang="en">Language</span>
+                <span lang="ru">Язык</span>
+              </label>
+              <select id="lang-switch">
+                <option value="ru">Русский</option>
+                <option value="en" selected>English</option>
+              </select>
+            </form> 
+            </div> 
+        </div>
+    </nav>
+    <div class = "s-div">
+        <h3 class = "inform" id = "demo" lang = "en"> </h3>
+        <h3 class = "inform" id = "demo2" lang = "ru"> Здесь вы можете найти для себя подходящие тренажерные залы, <br> также в тренажерных залах можно найти различное оборудование <br> и узнать о них много нового,  а также приобрести спортивные товары.  </h3>
+        <div class = "search">
+            <select id = "sel">
+                <option value = "one" style = "background-color: beige;" lang = "en"> Gyms </option>
+                <option value = "one" style = "background-color: beige" lang = "ru"> Тренажерные залы </option>
+                <option value = "two" style = "background-color: royalblue" lang = "en"> Equipments </option>
+                <option value = "two" style = "background-color: royalblue" lang = "ru"> Оборудование </option>
+                <option value = "three" style = "background-color: lightcoral" lang = "en"> Sport items </option>
+                <option value = "three" style = "background-color: lightcoral" lang = "ru"> Спортивный инвентарь </option>
+           </select>
+           <select id = "sel2" style = "background-color: lightcoral;  color: white">
+                <option value = "price0"> all </option>
+                <option value = "price1"> 1$-5$ </option>
+                <option value = "price2"> 6$-10$ </option>
+                <option value = "price3"> 10$-15$ </option>
+                <option value = "price4"> 15$-20$ </option>
+            </select>
+            <select id = "sel3" style = "background-color: royalblue;  color: white">
+              <option value = "ch1"> all </option>
+              <option value = "ch2"> for hands </option>
+              <option value = "ch3"> for abdominal </option>
+              <option value = "ch4"> for arms </option>
+          </select>
+            <input id = "string">
+            <button onclick="select()" lang="en" class = "buttonX"> Search </button> 
+            <button onclick="select()" lang="ru"  class = "buttonX"> Искать </button> 
+            <p id = "par"> <ifram src="" alt=""> </ifram> <img src = "" alt = ""/></p>
+        </div>
+    </div>
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+      <div class="container">
+        <div class="row row-30">
+          <div class="col-md-4 col-xl-5">
+            <div class="pr-xl-4">
+              <p>My name is Assylken, I am professional coder, bla bla bla bla bla bla bla, common let's go with us, bla bla bla</p>
+              <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Nur-Sultan</span><span>. </span><span>All Rights Reserved.</span></p>
+            </div>
+          </div>
+        <div class="col-md-4">
+        <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>House of Pushkin, Street of Kisimoto</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">asylken02@gmail.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">+77789329314</a> <span>or</span> <a href="tel:#">+123456789</a></dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Links</h5>
+            <ul class="nav-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          <div class="row no-gutters social-container">
+            <div id="col1" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+            <div id="col2" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+            <div id="col3"class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+            <div id="col4" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+          </div>
+      </footer>
+<script>
+
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just Korean text (you can change it)
+$('#lang-switch').change(function () { // put onchange event when user select option from select
+    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'ru':
+            $('[lang]').hide();
+            $('[lang="ru"]' ).show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        }
+});
+</script>
+
+</body>
+</html>

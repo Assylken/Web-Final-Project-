@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Study"/>
+	<meta charset = "utf-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">    
+    <script src="index.js"></script>
+    <title>about</title>
+</head>
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm ">
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item" lang="en"><a href="main.html" class="nav-link font-weight-bold text-uppercase">Main</a></li>
+            <li class="nav-item" lang="ru"><a href="main.html" class="nav-link font-weight-bold text-uppercase">ГЛАВНАЯ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <li class="nav-item" lang="en"><a href="my account.html" class="nav-link font-weight-bold text-uppercase">MY ACCOUNT</a></li>
+            <li class="nav-item" lang="ru"><a href="my account.html" class="nav-link font-weight-bold text-uppercase">МОЙ АККАУНТ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <li class="nav-item" lang="en"><a href="search.html" class="nav-link font-weight-bold text-uppercase">Search</a></li>
+            <li class="nav-item" lang="ru"><a href="search.html" class="nav-link font-weight-bold text-uppercase">ИСКАТЬ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <div class="dropdown">
+            <div onclick="myFunction()" class="dropbtn" lang="en">DROP DOWN</div>
+            <div onclick="myFunction()" class="dropbtn" lang="ru">ДРОП ДАУН</div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="form.html" lang="en">FORM</a>
+                <a href="about.html" lang="en">ABOUT</a>
+                <a href="form.html" lang="ru">ВОЙТИ</a>
+                <a href="about.html" lang="ru">О НАС</a>
+            </div>
+          </div>
+          </ul>
+          <div class = "lang">
+            <form> 
+              <label for="lang-switch">
+                <span lang="en">Language</span>
+                <span lang="ru">Язык</span>
+              </label>
+              <select id="lang-switch">
+                <option value="ru">Русский</option>
+                <option value="en" selected>English</option>
+              </select>
+            </form> 
+            </div> 
+        </div>
+    </nav>
+    <div >
+      <div class = "INFORET">
+        <h1 lang="en"><i> TOP 3 BODYBUILDER EVER!</i></h1>
+        <h1 lang="ru"><i> ТОП-3 БОДИБИЛДЕРА ЗА ВСЁ ВРЕМЯ!</i> </h1>
+      </div>
+      <button type="button" class="collapsible" lang="en">TOP #1</button>
+      <button type="button" class="collapsible" lang="ru">ТОП #1</button>
+        <div class="content">
+          <p class = "Body" lang="en"> <b>1st place - Evgeny Sandov, the founder of bodybuilding</b> <br>
+            We decided to give the leadership to the person with whom it all began. This is Friedrich Müller, half German, half Russian. For a sports career, he took his mother's surname as a pseudonym. So he became Evgeny Sandov. Was born in 1867. Then, of course, "Mister Olympia", similar contests, and even more so there were no competitors. Therefore, everyone came to see its stunning forms.
+            <br><br><br>
+            <br>• Height - 170 cm;
+            <br>• weight - 88 kg;
+            <br>• biceps volume - 43 cm;
+            <br>• thigh volume - 63 cm;
+            <br>• shin volume - 40 cm.
+            <br><br><br>
+            <br>Sandov worked part-time in the circus. There he fought with lions, for which he was considered almost a Roman gladiator. And then he began to tell everyone about his special training system and a healthy lifestyle. For this in 1911 in England he was awarded the title of "professor" of physical culture. It was Sadov who created the sport, which today is considered one of the most masculine. By the way, the gilded figurine presented to the best bodybuilders at the "Mister Olympia" is a figurine depicting Evgeny Sandov. </p>
+            
+            <p class = "Body" lang="ru"> <b>1 место - Евгений Сандов, родоначальник бодибилдинга</b> <br>
+              Лидерство мы решили отдать человеку, с которого все начиналось. Это Фридрих Мюллер, наполовину немец, наполовину русский. Для спортивной карьеры в качестве псевдонима взял фамилию матери. Так он и стал Евгением Сандовым. Родился в 1867 году. Тогда, понятное дело, "Мистеров Олимпия", похожих конкурсов и тем более конкурентов не было. Поэтому на его потрясающие формы сбегались посмотреть все.
+              <br><br><br>
+              <br>• Рост — 170 см;
+              <br>• вес — 88 кг;
+              <br>• объем бицепса — 43 см;
+              <br>• объем бедра — 63 см;
+              <br>• объем голени — 40 см.
+              <br><br><br>
+              <br>Сандов подрабатывал в цирке. Там он боролся со львами, за что его считали едва ли не римским гладиатором. А потом начал всем рассказывать о своей специальной системе тренировок и здоровом образе жизни. За это в 1911 году в Англии был удостоен звания "профессора" физической культуры. Именно Садов и создал вид спорта, который сегодня считается одним из самых мужских. Кстати, позолоченная фигурка, которую вручают лучшим культуристам на "Мистере Олимпия" - это статуэтка, изображающая Евгения Сандова. </p>
+
+            <img class = "imger" src = "https://mport.ua/i/75/68/17/756817/3cf9ca9766ba2a96c8f4ec2ca3582b87-quality_70Xresize_1Xallow_enlarge_0Xw_700Xh_0.jpg"/>
+          </div>
+        <button type="button" class="collapsible" lang="en">TOP #2</button>
+        <button type="button" class="collapsible" lang="ru">ТОП #2</button>
+        <div class="content">
+          <p class = "Body" lang="ru"><b>2 место - Арнольд Шварценеггер, в рекламе не нуждается</b><br>
+            Ну, об Арни можно писать вечно. Не даром же он обладал самыми потрясающими формами за всю историю бодибилдинга:
+            <br><br><br>
+            <br>• рост — 187 см;
+            <br>• соревновательный вес — 107 кг;
+            <br>• вес в межсезонье — 118 кг;
+            <br>• объем бицепса — 56 см;
+            <br>• объем грудной клетки — 145 см;
+            <br>• объем талии — 86 см;
+            <br>• объем бедра — 72 см;
+            <br>• объем голени — 51 см.
+            <br><br><br>
+            <br>Однажды Шварц признался:
+
+            <br>"Мои кумиры - Стив Ривз и Рег Парк".
+
+            <br>Это лишний раз говорит о том, что культуристы, отметившиеся в кинематографе, имели огромное влияние на умы молодежи XX века.
+             
+            <p class = "Body" lang="en"><b>2nd place - Arnold Schwarzenegger, does not need advertising</b><br>
+              Well, you can write about Arnie forever. It was not for nothing that he possessed the most amazing forms in the entire history of bodybuilding:
+              <br><br><br>
+              <br>•height - 187 cm;
+              <br>•competitive weight - 107 kg;
+              <br>•off-season weight - 118 kg;
+              <br>• biceps volume - 56 cm;
+              <br>•chest volume - 145 cm;
+              <br>•waist circumference - 86 cm;
+              <br>•thigh volume - 72 cm;
+              <br>•shin volume - 51 cm.
+              <br><br><br>
+              <br>Schwartz once admitted:
+              <br>"My idols are Steve Reeves and Reg Park."
+              <br>This once again suggests that the bodybuilders who made their mark in the cinema had a tremendous influence on the minds of the youth of the 20th century.</p>
+
+            <img class = "imger" src = "https://mport.ua/i/75/68/17/756817/1eed6f8c7a4fb56fe2f03cacf21e49cb-quality_70Xresize_1Xallow_enlarge_0Xw_700Xh_0.jpg"/>
+          </div>
+      <button type="button" class="collapsible" lang="en">TOP #3</button>
+      <button type="button" class="collapsible" lang="ru">ТОП #3</button>
+
+        <div class="content">
+          <p class = "Body" lang="ru"> <b> 3 место - Серджио Олива, "обреченный на успех" </b> <br>
+            
+            Родился на Кубе в День Независимости Америки в 1941 году. Будучи 20-летним юношей, заработал авторитет перспективного культуриста. Благодаря этому и эмигрировал в США.
+            <br><br><br>
+            <br>• Рост — 178 см;
+            <br>• соревновательный вес — 102 кг;
+            <br>• объем бицепса — 54 см;
+            <br>• объем грудной клетки — 140 см;
+            <br>• объем талии — 75 см;
+            <br>• объем бедра — 73 см;
+            <br>• объем голени — 47 см. <br>
+            <br><br><br>
+            Интересный факт: однажды Серджио реформировал свою систему тренировок. И раскачался до того, что при первой встрече с тогда еще молодым Шварцом, шокировал будущую голливудскую звезду. В своем активе имеет 3 победы на конкурсе "Мистер Олимпия".</p>
+          <p class = "Body" lang="en"> <b> 3rd place - Sergio Oliva, "Doomed to Success"</b> <br>
+            Born in Cuba on America's Independence Day in 1941. As a 20-year-old boy, he earned the prestige of a promising bodybuilder. Thanks to this, he emigrated to the United States.
+            <br><br><br>
+            <br>•Height - 178 cm;
+            <br>•competitive weight - 102 kg;
+            <br>•biceps volume - 54 cm;
+            <br>•chest volume - 140 cm;
+            <br>•waist circumference - 75 cm;
+            <br>•thigh volume - 73 cm;
+            <br>•shin volume - 47 cm.<br>
+            <br><br><br>
+            Fun fact: Sergio once reformed his training system. And he swayed to the point that at the first meeting with the then young Schwartz, he shocked the future Hollywood star. To his credit has 3 victories in the competition "Mr. Olympia".</p>
+
+            <img class = "imger" src = "https://mport.ua/i/75/68/17/756817/70df57f4cf056f6b503e2ef708294291-quality_70Xresize_1Xallow_enlarge_0Xw_700Xh_0.jpg"/>
+        
+        
+          </div>
+    </div>
+
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+      <div class="container">
+        <div class="row row-30">
+          <div class="col-md-4 col-xl-5">
+            <div class="pr-xl-4">
+              <p>My name is Assylken, I am professional coder, bla bla bla bla bla bla bla, common let's go with us, bla bla bla</p>
+              <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Nur-Sultan</span><span>. </span><span>All Rights Reserved.</span></p>
+            </div>
+          </div>
+        <div class="col-md-4">
+        <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>House of Pushkin, Street of Kisimoto</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">asylken02@gmail.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">+77789329314</a> <span>or</span> <a href="tel:#">+123456789</a></dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Links</h5>
+            <ul class="nav-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          <div class="row no-gutters social-container">
+            <div id="col1" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+            <div id="col2" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+            <div id="col3"class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+            <div id="col4" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+          </div>
+      </footer>
+<script>
+
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just Korean text (you can change it)
+$('#lang-switch').change(function () { // put onchange event when user select option from select
+    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'ru':
+            $('[lang]').hide();
+            $('[lang="ru"]' ).show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        }
+});
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+
+</body>
+</html>

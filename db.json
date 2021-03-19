@@ -1,0 +1,154 @@
+{
+    "users": [
+        {
+            "id":1,
+            "firstName": "Assylken",
+            "lastName": "Taukenov",
+            "email": "asylken02@gmail.com",
+            "password": "HelloWorld1%"
+        },
+        {
+            "id":2,
+            "firstName": "Asik",
+            "lastName": "Kasik",
+            "email": "asylken01@gmail.com",
+            "password": "HelloWorld1&"
+        }
+    ],
+    "Gyms": [
+        {
+            "id": 1,
+            "name": "Astana Fitness",
+            "address": "Astana, 4/1 Musrepov str., Aitolkyn TD 2nd floor (from the main entrance)",
+            "phone": "+7 (707) 177-73-27",
+            "info": "We work from 10.00 to 23.00\nDaily. Seven days a week\nUnlimited monthly subscription - 15,000 tenge, Day subscription for a month - 7,000 tenge.Unlimited subscription for 3 months - 25,000 tenge.When buying a subscription as a gift - introductory instruction, nutrition and training program",
+            "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20018.016933402487!2d71.43888182965564!3d51.159141252227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3172ee12b0ba644!2sFitnessBlitz_Astana!5e0!3m2!1skk!2skz!4v1615919798899!5m2!1skk!2skz"
+        },
+        {
+            "id": 2,
+            "name": "Underground Gym",
+            "address": "Astana, st. Mustafina 3",
+            "phone": "+7 (701) 035-30-03",
+            "info": "from 5000 tg. per month\nMon-Sat: 10-20:00\nSun: 10:00-16:00",
+            "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.252044681798!2d71.45420271572412!3d51.159142579579445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245813916477f0b%3A0xe97a2f5060e3ca70!2sUnderground%20Gym!5e0!3m2!1skk!2skz!4v1615919688917!5m2!1skk!2skz"
+        },
+        {
+            "id": 3,
+            "name": "Iron Paradise",
+            "address": "st. Kenesary 8, Nur-Sultan 020000",
+            "phone": "8 (776) 409 6868",
+            "info": "One visit - 2.500 tenge\n1 month before 17:00 - 10.000 tenge\n12 lessons per month - 15.000 tenge\n1 month unlimited - 18,000 tenge\n3 months unlimited - 45.000 tenge\n12 months unlimited - 148.000 tenge",
+            "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.067575360889!2d71.40492811572423!3d51.16254357957996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245872658fb4f23%3A0x4144a20718058d70!2z0KLRgNC10L3QsNC20LXRgNC90YvQuSDQt9Cw0LsgSVBneW0gKElyb24gUGFyYWRpc2Up!5e0!3m2!1skk!2skz!4v1615920118079!5m2!1skk!2skz"
+        },
+        {
+            "id": 4,
+            "name": "Gym XXL",
+            "address": "Moskow, 18 ground floor",
+            "phone": "+7‒777‒521‒83‒92",
+            "info": "The XXL gym (the organization's rating on the Zoon is 5) will help you stay in shape. Here we have selected various training programs and useful procedures for maintaining vigor and good mood.There are many sports programs that allow you to be in good shape. It is for you that the most popular ones have been collected in the XXL gym, and they offer to sign up for classes in the gym.The gym is located at Astana, Maskeu, 18. Doors are open daily: 09:00 - 23:00.",
+            "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10004.389471593046!2d71.4008978!3d51.1804283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bf559eaa76be5d7!2z0KLRgNC10L3QsNC20LXRgNC90YvQuSDQl9Cw0LsgWFhM!5e0!3m2!1sru!2skz!4v1615920300434!5m2!1sru!2skz"
+        },
+        {
+            "id": 5,
+            "name": "Gym BIZON",
+            "address": "st. Mustafina 21/2",
+            "phone": "8 (707) 841 4403",
+            "info": "Opening Hours - Mon - Sun: 10:00 - 23:00\nSeven days a week",
+            "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10009.600902215565!2d71.5092361!3d51.1564105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe29c2b4775ea4c7c!2z0KLRgNC10L3QsNC20LXRgNC90YvQuSDQt9Cw0LsgIkJJWk9OIg!5e0!3m2!1sru!2skz!4v1615920504384!5m2!1sru!2skz"
+        }
+    ],
+    "Equip": [
+        {
+            "id": 1,
+            "name": "Power Rack / Full Rack",
+            "description": "Power rack, also known as full rack is a massive square-like piece of equipment, which can be used for various exercise, including squats, bench presses, pull-ups and some of them also include dip station.It’s a multi-purpose piece of equipment that takes a lot of space.",
+            "image": "https://garagegympro.com/wp-content/uploads/2018/03/Body-Solid-Power-Rack.jpg",
+            "dest": "For hands"
+        },
+        {
+            "id": 2,
+            "name": "Squat Rack / Half Rack",
+            "description": "Half rack is basically one half of a power rack. It does not take a lot of space (in comparison to a full rack), it’s usually cheaper, but you can’t do as many different exercises with it as you can with a full rack. Usually, it’s meant for squats and pull-ups. While power (full) rack can also be used for squats, I felt obligated to separate the two.",
+            "image": "https://garagegympro.com/wp-content/uploads/2018/09/Rugged-Commercial-Half-Rack.jpg",
+            "dest": "For hands"
+        },
+        {
+            "id": 3,
+            "name": "Cable Crossover Machine",
+            "description": "You can usually find a good cable cross-over machine in your local gym. From my personal experience, a proper gym owns one or two of these machines. They look like two columns that utilize linear bearings and a pulley system. Commercial-grade crossovers are usually connected together and they take a lot of space.",
+            "image": "https://garagegympro.com/wp-content/uploads/2019/08/Cable-Crossover-Machine.jpg",
+            "dest": "For hands"
+        },
+        {
+            "id": 4,
+            "name": "Power Tower",
+            "description": "Another machine that definitely must have caught everyone’s attention (mainly because of its size) is the power tower. This heavy duty stand consists mainly of a dip station, pull-up bar, back-rest and sometimes sit-up bar or push-up bars that can be located at the base.Power towers are quite accessible these days, from various manufacturers in various quality. You can also get a commercially-graded one, which is of course more expensive. As with most machines, we’ve put together a guide for them as well.",
+            "image": "https://garagegympro.com/wp-content/uploads/2019/04/Weider-Power-Tower.jpg",
+            "dest": "For abdominal"
+        },
+        {
+            "id": 5,
+            "name": "Adjustable Weight Bench",
+            "description": "If you are looking for a bench for your home gym, then make sure that you will get an adjustable one. The difference in price is generally not very big and you can do hell of a lot more exercises with an adjustable one. Most adjustable weight benches come with several incline positions and at least one decline position. Make sure to look for a bench with these features.Weight benches are used for a whole range of exercise, including bench press, flyes, abdominal workouts, etc. Also, some of them come with included steel bench frame, so you can use them for bench presses right away.",
+            "image": "https://garagegympro.com/wp-content/uploads/2018/07/Bowflex-5.1S-Stowable-Bench.jpg",
+            "dest": "For abdominal"
+        },
+        {
+            "id": 6,
+            "name": "Hammer Strength Machine",
+            "description": "n most well-equipment public gyms, you can come across a hammer strength machine. This particular piece of equipment uses iso-lateral technology and is specifically patented for hammer strength. It is designed to copy natural moves of a human body, while at the same time uses the combination of one-sided movements and arcs to increase one’s strength.These machines are not available in non-commercial quality for home gym use (at least as of yet).",
+            "image": "https://garagegympro.com/wp-content/uploads/2019/08/hammer-strength-machine.jpg",
+            "dest": "For arms"
+        }
+       ], 
+    "Items": [
+        {
+          "id": 1,
+          "name": "Weighted jump rope",
+          "image": "https://images-na.ssl-images-amazon.com/images/I/71ruEEIWkQL._AC_SX425_.jpg",
+          "cost": 5
+        },
+        
+        {
+          "id": 2,
+          "name": "Weighted arm bands",
+          "image": "https://www.toneybands.com/wp-content/uploads/2016/08/toneybands-action-black.jpg",
+          "cost": 4
+        },
+        
+        {
+          "id": 3,
+          "name": "Resistance bands",
+          "image": "https://www.tunturi.org/website/Accessoires/14TUSYO016_10.jpg",
+          "cost": 9
+        },
+        
+        {
+          "id": 4,
+          "name": "Dumbbells",
+          "image": "https://www.repfitness.com/media/catalog/product/cache/6031cf661625f6f6abd8f87ef140b802/a/d/adj-db-collar-off.jpg",
+          "cost": 20
+        },
+        
+        {
+          "id": 5,
+          "name": "Kettlebell",
+          "image": "https://cdn.webshopapp.com/shops/281654/files/289053960/competition-kettlebell.jpg",
+          "cost": 6
+        },
+        
+        {
+          "id": 6,
+          "name": "Balance ball",
+          "image": "https://www.fitnessavenue.ca/images/default/thumbnails/bfda35ca3cae90b5_large.png",
+          "cost": 14
+        },
+        
+        {
+          "id": 7,
+          "name": "TRX bands",
+          "image": "https://nwscdn.com/media/catalog/product/cache/all/thumbnail/800x/9df78eab33525d08d6e5fb8d27136e95/t/r/trx-suspension-straps.jpg",
+          "cost": 15
+        }   
+    ]
+}

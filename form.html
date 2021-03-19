@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Study"/>
+	<meta charset = "utf-8"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">    
+    <script src="index.js"></script>
+    <title>form</title>
+</head>
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item" lang="en"><a href="main.html" class="nav-link font-weight-bold text-uppercase">Main</a></li>
+            <li class="nav-item" lang="ru"><a href="main.html" class="nav-link font-weight-bold text-uppercase">ГЛАВНАЯ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <li class="nav-item" lang="en"><a href="my account.html" class="nav-link font-weight-bold text-uppercase">MY ACCOUNT</a></li>
+            <li class="nav-item" lang="ru"><a href="my account.html" class="nav-link font-weight-bold text-uppercase">МОЙ АККАУНТ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <li class="nav-item" lang="en"><a href="search.html" class="nav-link font-weight-bold text-uppercase">Search</a></li>
+            <li class="nav-item" lang="ru"><a href="search.html" class="nav-link font-weight-bold text-uppercase">ИСКАТЬ</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">|</a></li>
+            <div class="dropdown">
+            <div onclick="myFunction()" class="dropbtn" lang="en">DROP DOWN</div>
+            <div onclick="myFunction()" class="dropbtn" lang="ru">ДРОП ДАУН</div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="form.html" lang="en">FORM</a>
+                <a href="about.html" lang="en">ABOUT</a>
+                <a href="form.html" lang="ru">ВОЙТИ</a>
+                <a href="about.html" lang="ru">О НАС</a>
+            </div>
+          </div>
+          </ul>
+          <div class = "lang">
+            <form> 
+              <label for="lang-switch">
+                <span lang="en">Language</span>
+                <span lang="ru">Язык</span>
+              </label>
+              <select id="lang-switch">
+                <option value="ru">Русский</option>
+                <option value="en" selected>English</option>
+              </select>
+            </form> 
+            </div> 
+        </div>
+    </nav>
+
+    
+    <div class = "lets">
+      <button id = "get" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+          Sign In
+      </button> 
+      <button id = "get2" class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+        Sign Up
+    </button>   
+      <div class="collapse" id="collapseExample1">
+      <div class = "cont">
+  
+  
+  
+  
+      <form method="POST" name="vform" class="text-center" id = "form">  <!--  -->
+          <div id="username_div">
+            <label>Username</label> <br>
+            <input type="text" name="username" class="textInput" id="uname">
+            <div id="name_error"></div>
+          </div>
+          <div id="password_div">
+            <label>Password</label> <br>
+            <input type="password" name="password" class="textInput" id="upass">
+          
+          </div>
+        <div class = "but">
+          <input id = "but" type="submit" name="register" value="Login" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+    <div class="collapse" id="collapseExample2">
+      <div class = "cont2">
+        <form method="POST" name="vform" class="text-center" id = "form-reg"> 
+          <div class = "name">
+            <label>Name</label> <br>
+            <input class = "textInput" id = "name" type="name" name="name" placeholder="Name"/>
+          </div>
+          <div class = "surname">
+            <label>Surname</label> <br>
+            <input class = "textInput" id = "surname" type="surname" name="surname" placeholder="Surname"/>
+          </div>
+          <div id="name_div">
+            <label>Username</label> <br>
+            <input type="text" name="username" placeholder="Username" class="textInput" id="name">
+          </div>
+          
+          <div class = "inputBox">
+            <label>Email</label> <br>
+            <input class = "textInput" id = "email" type="email" name="email" placeholder="Email" onkeydown="validation()"/>
+            <span id = "text"></span> 
+          </div>
+
+          <div id="password_div">
+            <label>Password</label> <br>
+            <input name="password" class="textInput" id="pass" placeholder="Password" onkeydown="passwordCheck()">  
+            <span id = "text2"></span>
+              
+          </div>
+
+          <div id="pass_confirm_div">
+            <label>Password confirm</label> <br>
+            <input type="password" name="password_confirm" class="textInput" id="pass2" placeholder="Confirm password">
+          <div id="password_error"></div>
+        </div>
+  
+        <div class = "but">
+          <input id = "but" type="submit" name="register" value="Register" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div>
+    <ul id = "orders"></ul>
+  </div>
+
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+      <div class="container">
+        <div class="row row-30">
+          <div class="col-md-4 col-xl-5">
+            <div class="pr-xl-4">
+              <p>My name is Assylken, I am professional coder, bla bla bla bla bla bla bla, common let's go with us, bla bla bla</p>
+              <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Nur-Sultan</span><span>. </span><span>All Rights Reserved.</span></p>
+            </div>
+          </div>
+        <div class="col-md-4">
+        <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>House of Pushkin, Street of Kisimoto</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">asylken02@gmail.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">+77789329314</a> <span>or</span> <a href="tel:#">+123456789</a></dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Links</h5>
+            <ul class="nav-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          <div class="row no-gutters social-container">
+            <div id="col1" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+            <div id="col2" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+            <div id="col3"class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+            <div id="col4" class = "col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+          </div>
+      </footer>
+<script>
+
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just Korean text (you can change it)
+$('#lang-switch').change(function () { // put onchange event when user select option from select
+    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'ru':
+            $('[lang]').hide();
+            $('[lang="ru"]' ).show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        }
+});
+
+$(function () {
+  var $orders = $('#orders');
+  $.ajax({
+    type: 'GET',
+    url: 'https://my-json-server.typicode.com/Assylken/mockjson/db',
+    success: function(orders) {
+      $.each(orders, function(i, order) {
+        $.orders.append('<li>name: ' + order.name +', drink: ' + order.drink + '</li>');
+      });
+    },
+    error: function() {
+      alert('error');
+    }
+  });
+});
+
+
+</script>
+
+</body>
+</html>
